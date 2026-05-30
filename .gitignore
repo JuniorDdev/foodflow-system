@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambiente Virtual
+.venv/
+venv/
+
+# Banco de Dados
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Sistema
+Thumbs.db
+.DS_Store

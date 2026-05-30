@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Lanchonete | Pedido</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar solid">
+  <a class="logo" href="index.html">🍔 <span>Web</span> Lanchonete</a>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a class="active" href="pedido.html">Pedido</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<main class="container page-space two-cols">
+  <section class="card">
+    <h1>Monte seu pedido</h1>
+    <form id="orderForm">
+      <label>Nome do cliente</label>
+      <input id="cliente" required placeholder="Digite seu nome">
+
+      <label>WhatsApp</label>
+      <input id="telefone" required placeholder="Ex: 98999999999">
+
+      <label>Produto</label>
+      <select id="produto" required></select>
+
+      <label>Quantidade</label>
+      <input id="quantidade" type="number" min="1" value="1" required>
+
+      <fieldset>
+        <legend>Adicionais</legend>
+        <label class="check"><input type="checkbox" value="Ovo extra" data-price="2"> Ovo extra + R$ 2,00</label>
+        <label class="check"><input type="checkbox" value="Carne extra" data-price="3"> Carne extra + R$ 3,00</label>
+        <label class="check"><input type="checkbox" value="Copo extra 180ml" data-price="4"> Copo extra 180ml + R$ 4,00</label>
+      </fieldset>
+
+      <label>Observações</label>
+      <textarea id="observacao" placeholder="Ex: sem cebola, molho à parte..."></textarea>
+
+      <div class="total-box">Total: <strong id="total">R$ 0,00</strong></div>
+      <button class="btn primary full" type="submit">Salvar Pedido</button>
+      <button class="btn whatsapp full" type="button" onclick="sendWhatsAppPreview()">Enviar no WhatsApp</button>
+    </form>
+  </section>
+
+  <aside class="card">
+    <h2>Resumo</h2>
+    <div id="orderPreview" class="preview"></div>
+  </aside>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script>initOrderPage();</script>
+</body>
+</html>

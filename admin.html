@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Lanchonete | Admin</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar solid">
+  <a class="logo" href="index.html">🍔 <span>Web</span> Lanchonete</a>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="pedido.html">Pedido</a>
+    <a class="active" href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<main class="container page-space">
+  <section id="loginBox" class="card login-card">
+    <h1>Login Admin</h1>
+    <p class="muted">Teste local: usuário <b>admin</b> e senha <b>1234</b>.</p>
+    <input id="adminUser" placeholder="Usuário">
+    <input id="adminPass" type="password" placeholder="Senha">
+    <button class="btn primary full" onclick="adminLogin()">Entrar</button>
+  </section>
+
+  <section id="adminPanel" class="hidden">
+    <div class="admin-head">
+      <div>
+        <h1>Painel de Pedidos</h1>
+        <p>Altere status, conclua, cancele ou exclua pedidos.</p>
+      </div>
+      <button class="btn outline" onclick="adminLogout()">Sair</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Cliente</th><th>Produto</th><th>Total</th><th>Status</th><th>Ações</th></tr>
+        </thead>
+        <tbody id="ordersTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script>initAdmin();</script>
+</body>
+</html>
