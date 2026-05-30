@@ -1,74 +1,70 @@
-# 🍔 Web Lanchonete - Sistema de Pedidos Online
+# 🍔 FoodFlow System
 
-Sistema web desenvolvido para simular uma lanchonete digital, permitindo que clientes visualizem o cardápio, realizem pedidos e acompanhem o atendimento.
-
-## 📋 Sobre o Projeto
-
-O projeto foi desenvolvido para fins de estudo e portfólio, demonstrando conhecimentos em desenvolvimento web, organização de interfaces, experiência do usuário e simulação de processos de atendimento.
-
-O sistema possui áreas separadas para:
-
-* Página Inicial (Banner e apresentação)
-* Cardápio Digital
-* Área de Pedidos
-* Painel Administrativo
-* Integração com WhatsApp (simulada)
-* Controle de status dos pedidos
+Sistema web de gerenciamento de pedidos para restaurantes e lanchonetes, desenvolvido para fins acadêmicos e de portfólio. O projeto demonstra conceitos de interface web, organização de sistemas, experiência do usuário e fluxo de atendimento digital.
 
 ---
 
-## 🚀 Funcionalidades
+# 📌 Sobre o Projeto
 
-### Cliente
+O FoodFlow System foi criado como um protótipo funcional de uma plataforma de pedidos online para restaurantes.
 
-✅ Visualização do cardápio
+O objetivo é permitir que clientes visualizem produtos, realizem pedidos e que administradores acompanhem e gerenciem os atendimentos através de uma interface simples e intuitiva.
 
-✅ Seleção de produtos
-
-✅ Escolha de quantidade
-
-✅ Adicionais
-
-✅ Cálculo automático do valor total
-
-✅ Envio de pedido via WhatsApp
-
-### Administração
-
-✅ Login administrativo
-
-✅ Visualização dos pedidos
-
-✅ Alteração de status
-
-✅ Concluir pedidos
-
-✅ Cancelar pedidos
-
-✅ Excluir pedidos
+Este projeto foi desenvolvido para demonstrar conhecimentos em desenvolvimento web e modelagem de sistemas utilizados em pequenos negócios.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+# 🚀 Funcionalidades
 
-### Front-end
+## 👤 Área do Cliente
+
+* Visualização do cardápio digital
+* Seleção de produtos
+* Escolha de quantidade
+* Inclusão de adicionais
+* Cálculo automático do valor total
+* Simulação de envio via WhatsApp
+* Interface responsiva
+
+---
+
+## 👨‍💼 Área Administrativa
+
+* Login administrativo
+* Visualização dos pedidos
+* Alteração de status
+* Concluir pedidos
+* Cancelar pedidos
+* Excluir pedidos
+* Simulação de gerenciamento em tempo real
+
+---
+
+# 🛠 Tecnologias Utilizadas
+
+### Front-End
 
 * HTML5
 * CSS3
 * JavaScript
 
-### Back-end (Versão futura)
+### Planejamento para versões futuras
 
 * Python
 * Flask
-* MySQL
+* SQLite
+* SQLAlchemy
+* Bootstrap
+* Chart.js
+* WhatsApp API
+* Twilio
 
 ---
 
-## 📂 Estrutura do Projeto
+# 📂 Estrutura do Projeto
 
 ```text
-web-lanchonete/
+FoodFlow-System/
 
 ├── index.html
 ├── cardapio.html
@@ -83,55 +79,122 @@ web-lanchonete/
 │
 ├── img/
 │   ├── banner.jpg
-│   ├── xburguer.jpg
-│   ├── xtudao.jpg
-│   └── hotdog.jpg
+│   ├── hamburguer.jpg
+│   ├── cachorro-quente.jpg
+│   └── bebidas.jpg
 │
-└── README.md
+├── screenshots/
+│   ├── home.png
+│   ├── cardapio.png
+│   ├── pedido.png
+│   └── admin.png
+│
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-## 🎯 Objetivo Acadêmico
+# 🖼️ Demonstração
 
-Este projeto foi desenvolvido como prática de desenvolvimento web e prototipação de sistemas comerciais, aplicando conceitos de:
+## Página Inicial
 
-* Interface Web Responsiva
-* Organização de Sistemas
-* Experiência do Usuário (UX)
-* Manipulação de Dados com JavaScript
-* Integração com Serviços Externos
+![Home](screenshots/home.png)
+
+A página inicial apresenta o sistema, banner promocional e acesso rápido às funcionalidades.
 
 ---
 
-## 🔮 Melhorias Futuras
+## Cardápio Digital
 
-* Banco de Dados SQLite
-* API Flask
-* Dashboard Administrativo
-* Relatórios de Vendas
-* Controle de Estoque
-* Login de Clientes
-* Upload de Imagens
+![Cardápio](screenshots/cardapio.png)
+
+Permite visualizar os produtos disponíveis e iniciar pedidos.
+
+---
+
+## Tela de Pedidos
+
+![Pedido](screenshots/pedido.png)
+
+O usuário seleciona quantidades, adicionais e visualiza o valor total calculado automaticamente.
+
+---
+
+## Painel Administrativo
+
+![Admin](screenshots/admin.png)
+
+Área destinada ao gerenciamento dos pedidos e acompanhamento dos status.
+
+---
+
+# 🎯 Objetivos do Projeto
+
+Este projeto foi desenvolvido para:
+
+* Praticar desenvolvimento web.
+* Simular processos de atendimento digital.
+* Aplicar conceitos de usabilidade.
+* Demonstrar habilidades de programação para portfólio.
+* Servir como base para futuras versões com Flask e SQLite.
+
+---
+
+# 🔮 Melhorias Futuras
+
+* Banco de dados SQLite
+* Backend em Flask
+* Login de clientes
+* Cadastro de produtos
+* Upload de imagens
+* Dashboard administrativo
+* Relatórios de vendas
+* Controle de estoque
+* Integração com WhatsApp
 * Integração com Mercado Pago
-* Integração com Twilio WhatsApp
+* Sistema de avaliações
+* Hospedagem em nuvem
 
 ---
 
-## 👨‍💻 Autor
+# 📚 Aprendizados
 
-Domingos de Jesus Silva Santos Junior
+Durante o desenvolvimento deste projeto foram aplicados conceitos relacionados a:
 
-Estudante de Sistemas de Informação - Universidade CEUMA
+* Estruturação de projetos web
+* HTML semântico
+* CSS responsivo
+* Manipulação de DOM com JavaScript
+* Experiência do usuário (UX)
+* Organização de código
+* Controle de versões com Git e GitHub
+
+---
+
+# 👨‍💻 Autor
+
+**Domingos de Jesus Silva Santos Junior**
+
+Graduando em Sistemas de Informação – Universidade CEUMA
+
+### Contato
 
 GitHub:
 https://github.com/JuniorDdev
 
-LinkedIn:
-(https://www.linkedin.com/in/domingos-junior-7a5357252/)
+Instagram:
+https://instagram.com/junior_legendary_
 
 ---
 
-## 📄 Licença
+# 📄 Licença
 
-Projeto desenvolvido para fins educacionais e de portfólio.
+Este projeto foi desenvolvido para fins acadêmicos, educacionais e de portfólio.
+
+Licenciado sob a licença MIT.
+
+---
+
+⭐ Caso tenha gostado do projeto, considere deixar uma estrela no repositório.
